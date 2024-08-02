@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" th:href="@{/css/contactanos.css}">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img th:src="@{/assets/icons/wiki-logo.png}" class="wiki" alt="Logo del WikiGroup">
+                <h1 class="logo-nombre"><a th:href="@{/taller-thymeleaf/equipo}">WikiGroup</a></h1>
+            </div>
+            <ul>
+                <li><a href="#" th:href="@{/taller-thymeleaf/equipo}">Presentación</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/descriProyecto}">Descripción</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/reqs}">Requerimientos</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/arquiProyecto}">Arquitectura</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/desarrollo}">Desarrollo</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/pruebas}">Pruebas</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/despliegue}">Despliegue</a></li>
+                    <li><a href="#" th:href="@{/taller-thymeleaf/contactanos}">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contactanos -->
+    <div class="contactanos">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos llenando el siguiente formulario:</p>
+            <form id="contactForm" th:action="@{/js/contactanos.js}" method="post" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-control" required>
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-control" required></textarea>
+                    <div class="invalid-feedback">Por favor, ingresa un mensaje.</div>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <h6>WikiGroup 2024</h6>
+            <img th:src="@{/assets/icons/copyright.png}" alt="Copyright">
+        </div>
+    </footer>        
+
+    <script th:src="@{/js/menuPrincipal.js}"></script>
+    <!-- Make sure to remove the empty script tag if not in use -->
+</body>
+</html>
