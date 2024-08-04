@@ -22,7 +22,7 @@ import com.example.tallerthymeleaf.thymeleaf.repository.RepositorioFormulario;
 
 //http://localhost:8080/
 @RestController
-@RequestMapping("/edu")
+@RequestMapping("/formulario-enviado")
 public class ControladorFormulario {
 
     @Autowired
