@@ -4,5 +4,5 @@ CREATE TABLE public.formulario (
     apellidos VARCHAR(100),
     correo VARCHAR(100),
     semestre INTEGER,
-    descripcion VARCHAR(100)
+    descripcion VARCHAR(500)
 );

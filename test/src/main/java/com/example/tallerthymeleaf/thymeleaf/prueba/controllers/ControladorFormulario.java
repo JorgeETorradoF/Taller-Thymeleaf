@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ch.qos.logback.core.encoder.EchoEncoder;
 import com.example.tallerthymeleaf.thymeleaf.model.Formulario;
 import com.example.tallerthymeleaf.thymeleaf.repository.RepositorioFormulario;
 
