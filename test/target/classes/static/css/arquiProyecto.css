@@ -116,6 +116,7 @@ p{
 .arquitectura .diagram img {
     width: 50%;
     height: 50%;
+    margin-bottom: 500px;
     display: block;
     margin: 0 auto; 
 }

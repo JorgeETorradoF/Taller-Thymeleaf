@@ -61,6 +61,13 @@ p{
     font-family: 'syne', sans-serif;
     padding: 10px;
 }
+.equipo-box img {
+    width: 30%; 
+    height: 30%;
+    max-height: 200px;
+    max-width: 300px;
+    object-fit: cover; 
+}
 
 /* Navbar */
 
