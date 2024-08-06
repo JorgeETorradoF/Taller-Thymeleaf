@@ -132,3 +132,9 @@ footer .container{
 footer .container img{
     width: 12px;
 }
+.arquitectura .diagram img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin: 0 auto; 
+}
