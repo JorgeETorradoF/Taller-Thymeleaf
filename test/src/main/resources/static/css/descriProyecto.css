@@ -191,3 +191,10 @@ footer .container{
 footer .container img{
     width: 12px;
 }
+
+@media (max-width: 1440px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
