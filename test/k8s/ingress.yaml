@@ -9,7 +9,7 @@ spec:
     - host:
       http:
         paths:
-          - path: /
+          - path: /taller-thymeleaf
             pathType: Prefix
             backend:
               service:

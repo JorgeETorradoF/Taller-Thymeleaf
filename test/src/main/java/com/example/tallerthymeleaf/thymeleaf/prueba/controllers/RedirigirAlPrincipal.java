@@ -7,7 +7,7 @@ import org.springframework.web.servlet.view.RedirectView;
 @Controller
 public class RedirigirAlPrincipal {
 
-    @GetMapping("/")
+    @GetMapping("/taller-thymeleaf")
     public RedirectView redirigirAlTeam() {
         return new RedirectView("/taller-thymeleaf/equipo");
     }
