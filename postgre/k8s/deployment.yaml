@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: localhost:5000/dockersito-postgres:latest
+        image: localhost:5000/postgres-thymeleaf:latest
         env:
         - name: POSTGRES_PASSWORD
           value: "admin1234"
