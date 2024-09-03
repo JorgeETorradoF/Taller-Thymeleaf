@@ -139,10 +139,42 @@ h3 a:hover{
 /* Pruebas */
 
 .pruebas{
-    height: 795px;
     padding: 80px;
     background-color: #f1f1f1;
+    text-align: center;
+    align-items: center;   
 }
+
+.pruebas .tabla{
+    padding: 10px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+
+.pruebas h2, .pruebas h3{
+    padding: 10px;
+}
+
+table {
+    border-radius: 5px;
+}
+
+.casos-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+    padding: 20px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+
+.casos-box img{
+    padding: 10px;
+}
+
 
 /* Footer */
 

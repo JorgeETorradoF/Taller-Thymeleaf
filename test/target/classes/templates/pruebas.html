@@ -6,7 +6,7 @@
     <title>Pruebas</title>
     <link rel="stylesheet" th:href="@{/css/pruebas.css}">
 </head>
-<body>
+<div>
     <!-- Nav Bar -->
     <nav class="navbar">
         <div class="container">
@@ -29,154 +29,132 @@
 
     <!-- Pruebas -->
     <div class="pruebas">
-        <h2>Caso de Prueba</h2>
-        <table border="1">
-            <tr>
-                <th>Id</th>
-                <td>TC001</td>
-                <th>Author</th>
-                <td>GRUPO4</td>
-            </tr>
-            <tr>
-                <th>Date created</th>
-                <td>3/08/2024</td>
-                <th>Title</th>
-                <td>Registro de Usuario (Frontend)</td>
-            </tr>
-            <tr>
-                <th>Tester</th>
-                <td></td>
-                <th>Date tested</th>
-                <td></td>
-            </tr>
-            <tr>
-                <th colspan="4">Description: Verificar que el formulario de registro de usuario en el frontend funcione correctamente</th>
-            </tr>
-            <tr>
-                <th>Type</th>
-                <td colspan="3">Funcional</td>
-            </tr>
-            <tr>
-                <th>Preconditions</th>
-                <td colspan="3">El usuario no debe estar registrado previamente en el sistema</td>
-            </tr>
-        </table>
-        <h3>Expected results table:</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Test</th>
-                    <th>Steps</th>
-                    <th>Data</th>
-                    <th>Expected Result</th>
-                    <th>Actual Result</th>
-                    <th>Status</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Ir a la página de registro</td>
-                    <td>N/A</td>
-                    <td>La página de registro se muestra correctamente</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Ingresar datos válidos en el formulario de registro</td>
-                    <td>“Juan”, “Perez”, juan.perez@example.com, “555123”, “password123”, “arrendador”</td>
-                    <td>Los datos son aceptados sin errores</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Hacer clic en “Registrar”</td>
-                    <td>N/A</td>
-                    <td>El usuario es registrado y redirigido a la página de inicio</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="casos-box 1">
+            <div class="tabla"> 
+                <h2> 1 Caso de Prueba</h2>
+                <table border="1">
+                    <tr>
+                        <th>Id</th>
+                        <td>TC001</td>
+                        <th>Author</th>
+                        <td>GRUPO4</td>
+                    </tr>
+                    <tr>
+                        <th>Date created</th>
+                        <td>3/08/2024</td>
+                        <th>Title</th>
+                        <td>Registro de Usuario (Frontend)</td>
+                    </tr>
+                    <tr>
+                        <th>Tester</th>
+                        <td></td>
+                        <th>Date tested</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Description: Verificar que el formulario de registro de usuario en el frontend funcione correctamente</th>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td colspan="3">Funcional</td>
+                    </tr>
+                    <tr>
+                        <th>Preconditions</th>
+                        <td colspan="3">El usuario no debe estar registrado previamente en el sistema</td>
+                    </tr>
+                </table>
+            </div>
 
-        <h2>Caso de Prueba</h2>
-        <table border="1">
-            <tr>
-                <th>Id</th>
-                <td>TC002</td>
-                <th>Author</th>
-                <td>GRUPO4</td>
-            </tr>
-            <tr>
-                <th>Date created</th>
-                <td>3/08/2024</td>
-                <th>Title</th>
-                <td>Inicio de Sesión (Frontend)</td>
-            </tr>
-            <tr>
-                <th>Tester</th>
-                <td></td>
-                <th>Date tested</th>
-                <td></td>
-            </tr>
-            <tr>
-                <th colspan="4">Description: Verificar que el formulario de inicio de sesión en el frontend funcione correctamente</th>
-            </tr>
-            <tr>
-                <th>Type</th>
-                <td colspan="3">Funcional</td>
-            </tr>
-            <tr>
-                <th>Preconditions</th>
-                <td colspan="3">El usuario debe estar registrado previamente en el sistema y su cuenta debe estar activada</td>
-            </tr>
-        </table>
-        <h3>Expected results table:</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Test</th>
-                    <th>Steps</th>
-                    <th>Data</th>
-                    <th>Expected Result</th>
-                    <th>Actual Result</th>
-                    <th>Status</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Ir a la página de inicio de sesión</td>
-                    <td>N/A</td>
-                    <td>La página de inicio de sesión se muestra correctamente</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Ingresar correo y contraseña válidos</td>
-                    <td>juan.perez@example.com, “password123”</td>
-                    <td>Los datos son aceptados sin errores</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Hacer click en "iniciar sesi&oacuten"</td>
-                    <td>N/A</td>
-                    <td>El usuario inicia sesión y es redirigido a su p&aacutegina principal</td>
-                    <td>Prueba pendiente de realizar</td>
-                    <td>Passed/Failed</td>
-                </tr>
+            <div class="tabla">
+                <h3>Expected results table:</h3>
+
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Test</th>
+                            <th>Steps</th>
+                            <th>Data</th>
+                            <th>Expected Result</th>
+                            <th>Actual Result</th>
+                            <th>Status</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ir a la página de registro</td>
+                            <td>N/A</td>
+                            <td>La página de registro se muestra correctamente</td>
+                            <td>Prueba pendiente de realizar</td>
+                            <td>Passed/Failed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ingresar datos válidos en el formulario de registro</td>
+                            <td>“Juan”, “Perez”, juan.perez@example.com, “555123”, “password123”, “arrendador”</td>
+                            <td>Los datos son aceptados sin errores</td>
+                            <td>Prueba pendiente de realizar</td>
+                            <td>Passed/Failed</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hacer clic en “Registrar”</td>
+                            <td>N/A</td>
+                            <td>El usuario es registrado y redirigido a la página de inicio</td>
+                            <td>Prueba pendiente de realizar</td>
+                            <td>Passed/Failed</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="resultados">
+                <h2> Results: </h2> 
+                <img th:src="@{/assets/test/registroCuenta.png}" alt=" Registrar cuenta">
+            </div>
+            
+        </div>
+
+        <div class="casos-box 2">
+            <div class="tabla"> 
+                <h2>2 Caso de Prueba</h2>
+                <table border="1">
+                    <tr>
+                        <th>Id</th>
+                        <td>TC002</td>
+                        <th>Author</th>
+                        <td>GRUPO4</td>
+                    </tr>
+                    <tr>
+                        <th>Date created</th>
+                        <td>3/08/2024</td>
+                        <th>Title</th>
+                        <td>Inicio de Sesión (Frontend)</td>
+                    </tr>
+                    <tr>
+                        <th>Tester</th>
+                        <td></td>
+                        <th>Date tested</th>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Description: Verificar que el formulario de inicio de sesión en el frontend funcione correctamente</th>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td colspan="3">Funcional</td>
+                    </tr>
+                    <tr>
+                        <th>Preconditions</th>
+                        <td colspan="3">El usuario debe estar registrado previamente en el sistema y su cuenta debe estar activada</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tabla">
                 <h3>Expected results table:</h3>
                 <table border="1">
                     <thead>
@@ -209,10 +187,27 @@
                             <td>Passed/Failed</td>
                             <td></td>
                         </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Hacer click en "iniciar sesi&oacuten"</td>
+                            <td>N/A</td>
+                            <td>El usuario inicia sesión y es redirigido a su p&aacutegina principal</td>
+                            <td>Prueba pendiente de realizar</td>
+                            <td>Passed/Failed</td>
+                        </tr>
                     </tbody>
                 </table>
-        
-                <h2>Caso de Prueba</h2>
+            </div>
+            <div class="resultados">
+                <h2> Results: </h2> 
+                <img th:src="@{/assets/test/login.png}" alt=" Iniciar sesion">
+            </div>
+        </div>
+
+        <div class="casos-box 3">
+
+            <div class="tabla">
+                <h2>3 Caso de Prueba</h2>
                 <table border="1">
                     <tr>
                         <th>Id</th>
@@ -244,6 +239,9 @@
                         <td colspan="3">El usuario debe haber iniciado sesión como arrendador</td>
                     </tr>
                 </table>
+            </div>
+
+            <div class="tabla">
                 <h3>Expected results table:</h3>
                 <table border="1">
                     <thead>
@@ -267,15 +265,23 @@
                             <td>Passed/Failed</td>
                             <td></td>
                         </tr>    
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            </div>
+            <div class="resultados">
+                <h2> Results: </h2> 
+                <img th:src="@{/assets/test/registroProp.png}" alt="Registro de propiedad">
+            </div>
+        </div>
 
-        <h2>Caso de Prueba</h2>
+        <div class="casos-box 4">
+            <div class="tabla">
+                <h2>4 Caso de Prueba</h2>
                 <table border="1">
                     <tr>
                         <th>Id</th>
                         <td>TC004</td>
-                        <th>Author</th>
+                        <th>Author</th> 
                         <td>GRUPO4</td>
                     </tr>
                     <tr>
@@ -302,6 +308,9 @@
                         <td colspan="3">La propiedad debe estar disponible y el usuario debe haber iniciado sesión como arrendatario</td>
                     </tr>
                 </table>
+            </div>
+
+            <div class="tabla">
                 <h3>Expected results table:</h3>
                 <table border="1">
                     <thead>
@@ -325,8 +334,14 @@
                             <td>Passed/Failed</td>
                             <td></td>
                         </tr>    
-            </tbody>
-        </table>
+                    </tbody>
+                </table>
+            </div>
+            <div class="resultados">
+                <h2> Results: </h2> 
+                <img th:src="@{/assets/test/propiedadesPorArrendador.png}" alt="Propiedades por arrendador">
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
