@@ -35,7 +35,7 @@ Una vez se haya desplegado y tenga una IP externa (en algunos casos será localh
 
 5. **Entre a la carpeta `test` y ejecute el script de build y push de imagen:**
     ```bash
-    buildAndPush.bat proyecto_e1
+    buildAndPush.bat test
     ```
 
 6. **Entre a la carpeta `k8s` dentro de la carpeta `tests` y aplique el deployment y el ingress:**
