@@ -37,7 +37,8 @@ Una vez se haya desplegado y tenga una IP externa (en algunos casos será localh
     ```bash
     buildAndPush.bat test
     ```
-   **Si surgen errores al buildear, asegurese que los caracteres de fin de línea de los archivos pom.xml y mvnw estén en formato linux y no windows, puede hacer esto mediante visual studio, seleccionando el contenido del archivo y clickeando en crlf (está ubicado abajo a su derecha) para posteriormente cambiarlo a lf 
+   **Si surgen errores al buildear, asegúrese de que los caracteres de fin de línea de los archivos `pom.xml` y `mvnw` estén en formato Linux y no Windows. Puede hacer esto mediante Visual Studio, seleccionando el contenido del archivo y haciendo clic en `CRLF` (está ubicado abajo a su derecha) para posteriormente cambiarlo a `LF`.**
+
 
 6. **Entre a la carpeta `k8s` dentro de la carpeta `tests` y aplique el deployment y el ingress:**
     ```bash
