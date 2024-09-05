@@ -18,10 +18,14 @@ Una vez se haya desplegado y tenga una IP externa (en algunos casos será localh
     ```bash
     docker run -d -p 5000:5000 --name registry registry:2.7
     ```
+    **Si ya ejecutó almenos 1 vez el run del registry, no es necesario volver a correrlo, solo se requiere encenderlo (en caso de que esté apagado) con el comando:**
+   ```bash
+    docker start registry
+    ```
 
-3. **Entre a la carpeta `postgre` y buildee la imagen:**
+3. **Entre a la carpeta `postgre` y ejecute el script de build y push de imagen:**
     ```bash
-    docker build -t localhost:5000/dockersito-postgres:latest .
+    buildAndPush.bat postgres-thymeleaf
     ```
 
 4. **Entre a la carpeta `k8s` dentro de la carpeta `postgre` y aplique el deployment:**
@@ -29,23 +33,18 @@ Una vez se haya desplegado y tenga una IP externa (en algunos casos será localh
     kubectl apply -f deployment.yaml
     ```
 
-5. **Entre a la carpeta `test` y buildee la imagen de la siguiente manera:**
+5. **Entre a la carpeta `test` y ejecute el script de build y push de imagen:**
     ```bash
-    docker build -t localhost:5000/test:latest .
+    buildAndPush.bat proyecto_e1
     ```
 
-6. **Luego se debe pushear la imagen al registry:**
-    ```bash
-    docker push localhost:5000/test:latest
-    ```
-
-7. **Entre a la carpeta `k8s` dentro de la carpeta `tests` y aplique el deployment y el ingress:**
+6. **Entre a la carpeta `k8s` dentro de la carpeta `tests` y aplique el deployment y el ingress:**
     ```bash
     kubectl apply -f deployment.yaml
     kubectl apply -f ingress.yaml
     ```
 
-8. **Para confirmar que todo salió bien ejecute el comando:**
+7. **Para confirmar que todo salió bien ejecute el comando:**
     ```bash
     kubectl get pods -n thymeleaf
     ```
