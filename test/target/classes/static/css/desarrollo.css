@@ -140,9 +140,45 @@ h3 a:hover{
 /* Desarrollo */
 
 .desarrollo{
-   height: 795px;
    padding: 80px;
    background-color: #f1f1f1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.desarrollo .contratos-funcionales{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+}
+
+.desarrollo h1,h2{
+    padding: 10px;
+    align-items: center;
+}
+table {
+    border-radius: 5px;
+    align-items: center;
+}
+
+table tr,th,td{
+    padding: 5px;
+}
+
+.desarrollo .documentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1028px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
 }
 
 /* Footer */
